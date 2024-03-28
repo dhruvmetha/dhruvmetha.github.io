@@ -8,7 +8,7 @@ author: "Dhruv Metha Ramesh"
 authors: "<strong>Dhruv Metha Ramesh</strong>, Shreesh Keskar, Aravind Sivaramakrishnan, Kostas E Bekris, Jingjin Yu, Abdeslam Boularias"
 venue: "Under Review"
 subtitle: ""
-code: https://github.com/dhruvmetha/walk-these-ways
+code: https://github.com/dhruvmetha/probe
 website: https://dhruvmetha.github.io/legged-probe
 ---
-We show how shape reconstruction with 3D Gaussians can be expanded to include differentiable optical flow, colored mesh exports and more. 
+PROBE introduces a transformer based system that predicts 2D planar obstacles in the environment only from the robot's interaction with the obstacles. The transformer uses only the history of the robot's proprioceptive states (joint positions, joint velocities, torques applied on the joints and robot pose) for this prediction.
