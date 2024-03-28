@@ -71,11 +71,10 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <!-- <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /> -->
-              <video autoplay="" loop="" muted="" src="/{{post.image}}" alt="sym" width="90%" style="margin-top:15px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+            <td style="width:40%;vertical-align:middle;min-width:120px">
+              <video autoplay="" loop="" muted="" src="/{{post.image}}" alt="sym" width="100%" style="border-radius:15px;border:1px solid black"></video>
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
