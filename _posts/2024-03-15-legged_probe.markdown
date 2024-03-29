@@ -8,6 +8,7 @@ author: "Dhruv Metha Ramesh"
 authors: "<strong>Dhruv Metha Ramesh</strong>, Shreesh Keskar, Aravind Sivaramakrishnan, Kostas E Bekris, Jingjin Yu, Abdeslam Boularias"
 venue: "Under Review"
 subtitle: ""
+paper: https://dhruvmetha.github.io/legged-probe/static/docs/probe.pdf
 code: https://github.com/dhruvmetha/probe
 website: https://dhruvmetha.github.io/legged-probe
 ---
