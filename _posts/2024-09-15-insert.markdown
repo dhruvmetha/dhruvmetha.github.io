@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Integrating Model-based Control and RL for Sim2Real Transfer of Tight Insertion Policies"
+date:   2024-09-15 18:08:39 +00:00
+image: videos/legged_probe.mp4
+categories: research
+author: "Dhruv Metha Ramesh"
+authors: "Isidoros Marougkas*, <strong>Dhruv Metha Ramesh*</strong>, Joe H. Doerr, Edgar Granados, Aravind Sivaramakrishnan, Abdeslam Boularias, Kostas E. Bekris"
+venue: "Under Review"
+subtitle: ""
+paper: ""
+code: ""
+website: https://dhruvmetha.github.io/linsert
+---
+This work addresses precise (<1mm) object insertion tasks by combining model-based control with residual RL, enabling zero-shot transfer from simulation to reality without fine-tuning. Using SE(3) poses, the integrated policy outperforms state-of-the-art RL and hybrid approaches, validated through simulations and real-world tests.
