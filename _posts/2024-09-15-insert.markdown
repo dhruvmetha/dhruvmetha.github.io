@@ -10,6 +10,6 @@ venue: "Under Review"
 subtitle: ""
 paper: ""
 code: ""
-website: https://dhruvmetha.github.io/linsert
+website: https://dhruvmetha.github.io/insert
 ---
 This work addresses precise (<1mm) object insertion tasks by combining model-based control with residual RL, enabling zero-shot transfer from simulation to reality without fine-tuning. The integrated policy outperforms state-of-the-art RL and hybrid approaches, validated through simulations and real-world tests.
