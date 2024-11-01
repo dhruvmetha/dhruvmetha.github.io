@@ -2,7 +2,7 @@
 layout: post
 title:  "Integrating Model-based Control and RL for Sim2Real Transfer of Tight Insertion Policies"
 date:   2024-09-15 18:08:39 +00:00
-image: "videos/insert.gif"
+image: "videos/insert.mp4"
 categories: research
 author: "Dhruv Metha Ramesh"
 authors: "Isidoros Marougkas*, <strong>Dhruv Metha Ramesh*</strong>, Joe H. Doerr, Edgar Granados, Aravind Sivaramakrishnan, Abdeslam Boularias, Kostas E. Bekris"
