@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "PROBE: Proprioceptive Obstacle Detection and Estimation while Navigating in Clutter"
-date:   2024-09-16 18:08:39 +00:00
+date:   2025-09-16 18:08:39 +00:00
 image: videos/legged_probe.mp4
 categories: research
 author: "Dhruv Metha Ramesh"
 authors: "<strong>Dhruv Metha Ramesh</strong>, Shreesh Keskar, Aravind Sivaramakrishnan, Kostas E Bekris, Jingjin Yu, Abdeslam Boularias"
-venue: "ICRA 2025"
+venue: "ICRA"
 subtitle: ""
 paper: https://dhruvmetha.github.io/legged-probe/static/docs/probe.pdf
 code: https://github.com/dhruvmetha/probe
