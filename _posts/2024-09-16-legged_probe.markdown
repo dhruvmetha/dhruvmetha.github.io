@@ -6,7 +6,7 @@ image: videos/legged_probe.mp4
 categories: research
 author: "Dhruv Metha Ramesh"
 authors: "<strong>Dhruv Metha Ramesh</strong>, Shreesh Keskar, Aravind Sivaramakrishnan, Kostas E Bekris, Jingjin Yu, Abdeslam Boularias"
-venue: "Under Review"
+venue: "ICRA 2025"
 subtitle: ""
 paper: https://dhruvmetha.github.io/legged-probe/static/docs/probe.pdf
 code: https://github.com/dhruvmetha/probe

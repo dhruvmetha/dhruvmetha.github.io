@@ -6,7 +6,7 @@ image: "videos/insert.mp4"
 categories: research
 author: "Dhruv Metha Ramesh"
 authors: "Isidoros Marougkas*, <strong>Dhruv Metha Ramesh*</strong>, Joe H. Doerr, Edgar Granados, Aravind Sivaramakrishnan, Abdeslam Boularias, Kostas E. Bekris"
-venue: "Under Review"
+venue: "ICRA 2025"
 subtitle: ""
 paper: ""
 code: ""
