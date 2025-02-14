@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PROBE: Proprioceptive Obstacle Detection and Estimation while Navigating in Clutter"
-date:   2025-09-16 18:08:39 +00:00
+date:   2024-09-16 18:08:39 +00:00
 image: videos/legged_probe.mp4
 categories: research
 author: "Dhruv Metha Ramesh"
