@@ -8,7 +8,7 @@ author: "Dhruv Metha Ramesh"
 authors: "Isidoros Marougkas*, <strong>Dhruv Metha Ramesh*</strong>, Joe H. Doerr, Edgar Granados, Aravind Sivaramakrishnan, Abdeslam Boularias, Kostas E. Bekris"
 venue: "ICRA"
 subtitle: ""
-paper: ""
+paper: "https://arxiv.org/abs/2505.11858"
 code: ""
 website: https://dhruvmetha.github.io/insert
 ---
