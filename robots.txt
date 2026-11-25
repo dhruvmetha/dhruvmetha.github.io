@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /_templates/
+Disallow: /_data/
+Disallow: /_tools/
+Allow: /
+
+Sitemap: https://dhruvmetha.github.io/sitemap.xml

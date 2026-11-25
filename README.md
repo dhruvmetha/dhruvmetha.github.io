@@ -1,14 +1,33 @@
-# updated website
+# dhruvmetha.github.io
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Source for https://dhruvmetha.github.io, the homepage of Dhruv Metha Ramesh.
+The design comes from [Jon Barron's website](https://github.com/jonbarron/jonbarron.github.io).
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+GitHub Pages serves this repo as plain files (`.nojekyll`), so what you commit is what goes live.
 
+## Editing
 
+- Papers: `_data/publications.yml`. News: `_data/news.yml`.
+- Bio, contact links, reviewing and teaching: `_templates/index.html`.
+- Styles: `stylesheet.css`. The upstream part is unchanged; site changes are in the block at the end.
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+After any edit, rebuild and check the result:
+
+```bash
+/usr/bin/python3 build.py           # writes index.html and sitemap.xml (needs PyYAML)
+/usr/bin/python3 build.py --check   # fails if index.html is stale; run before committing
+python3 -m http.server 8000         # then open http://localhost:8000
+```
+
+`build.py` refuses to write a page that still contains an all-caps bracketed placeholder.
+
+## CV
+
+The CV link points at `pdfs/Dhruv-Metha-Ramesh-CV.pdf`. Copy the built PDF there by hand; `build.py` warns while it is missing. Leave the phone number out of the public copy.
+
+## Media
+
+- Teasers go in `videos/` as MP4 (about 480 px wide, under 500 KB) with a `.jpg` poster of the same name. `_tools/media.sh` has the ffmpeg commands.
+- `_tools/make_images.py` rebuilds the favicons and the link-preview image `images/og.jpg` from `images/profile.jpg` and the teaser posters.
+
+The project pages `/insert/` and `/legged-probe/` live in their own repos, `dhruvmetha/insert` and `dhruvmetha/legged-probe`.

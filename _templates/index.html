@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dhruv Metha Ramesh</title>
+    <meta name="author" content="Dhruv Metha Ramesh">
+    <meta name="description" content="Dhruv Metha Ramesh, CS PhD student at Rutgers. Robot learning for contact-rich manipulation, legged robots and learning-guided planning. Seeking Summer 2027 research internships.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://dhruvmetha.github.io/">
+    <meta property="og:title" content="Dhruv Metha Ramesh">
+    <meta property="og:description" content="Robot learning PhD student at Rutgers working on sim-to-real insertion, legged proprioception and learning-guided planning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhruvmetha.github.io/">
+    <meta property="og:image" content="https://dhruvmetha.github.io/images/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dhruv Metha Ramesh, with stills of a quadruped and a robot arm from his papers">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dhruv Metha Ramesh">
+    <meta name="twitter:description" content="Robot learning PhD student at Rutgers working on sim-to-real insertion, legged proprioception and learning-guided planning.">
+    <meta name="twitter:image" content="https://dhruvmetha.github.io/images/og.jpg">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="bio">
+        <div class="bio-text">
+          <h1 class="name">Dhruv Metha Ramesh</h1>
+          <p>
+            I'm a PhD candidate in <a href="https://www.cs.rutgers.edu/">Computer Science at Rutgers University</a>, in the <a href="https://rl.cs.rutgers.edu/">Robot Learning Lab</a>, advised by <a href="https://rl.cs.rutgers.edu/abdeslam.html">Abdeslam Boularias</a> and <a href="https://www.cs.rutgers.edu/people/professors/details/kostas-bekris">Kostas Bekris</a>.
+            I train robot policies in simulation and deploy them on real hardware, including insertion with under 1 mm clearance on a robot arm and estimating hidden obstacles from joint torques and body motion on a Unitree Go1 quadruped.
+            I also use learned models to make planning cheaper, for example by ranking push actions so a robot can clear a path through movable obstacles.
+          </p>
+          <p>
+            I expect to finish my PhD in May 2028. I'm seeking research internships for Summer 2027 in robot learning and manipulation.
+          </p>
+          <p class="bio-links">
+            <a href="mailto:dhruv.metha@gmail.com">dhruv.metha@gmail.com</a><br>
+            <a href="pdfs/Dhruv-Metha-Ramesh-CV.pdf">CV</a> &nbsp;/&nbsp;
+            <a href="https://scholar.google.com/citations?user=OTJtuB4AAAAJ&amp;hl=en">Google Scholar</a> &nbsp;/&nbsp;
+            <a href="https://github.com/dhruvmetha">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/dhruvmetha/">LinkedIn</a>
+          </p>
+        </div>
+        <div class="bio-photo">
+          <img src="images/profile.jpg" alt="Dhruv Metha Ramesh" width="310" height="326">
+        </div>
+      </header>
+
+      <section class="section-header">
+        <h2>News</h2>
+{{ news }}
+      </section>
+
+      <section class="section-header">
+        <h2>Research</h2>
+        <p>
+          I work on robot learning for contact-rich manipulation, legged robots and learning-guided planning, with sim-to-real deployment on physical robots. * marks equal contribution.
+        </p>
+      </section>
+
+      <section class="papers">
+{{ selected }}
+      </section>
+
+      <section class="section-header">
+        <h2>Other papers</h2>
+      </section>
+
+      <section class="compact-papers">
+{{ other }}
+      </section>
+
+      <section class="section-header">
+        <h2>Service and teaching</h2>
+      </section>
+
+      <section class="misc">
+        <div class="misc-row">
+          <div class="misc-badge">
+            <div class="colored-box" style="background-color: #aaba9e;">
+              <h2>Reviewer</h2>
+            </div>
+          </div>
+          <div class="misc-links">
+            <div>Robotics: Science and Systems (RSS), 2023-2025</div>
+            <div>IEEE International Conference on Robotics and Automation (ICRA), 2022-2026</div>
+            <div>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022-2026</div>
+            <div>Conference on Robot Learning (CoRL), 2024</div>
+            <div>Conference on Neural Information Processing Systems (NeurIPS), 2024</div>
+            <div>IEEE Robotics and Automation Letters (RA-L)</div>
+          </div>
+        </div>
+        <div class="misc-row">
+          <div class="misc-badge">
+            <div class="colored-box" style="background-color: #edd892;">
+              <h2>Teaching</h2>
+            </div>
+          </div>
+          <div class="misc-links">
+            <div>Instructor, CS460/560 Introduction to Computational Robotics, Rutgers</div>
+            <div>Instructor, CS440/520 Introduction to Artificial Intelligence, Rutgers</div>
+            <div>Teaching assistant, CS562 Advanced Robotics, Rutgers</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          Design and source code from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website</a>.
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      // Teasers autoplay muted. Click, Enter or Space pauses and resumes one.
+      // With "reduce motion" set in the OS, none of them autoplay.
+      (function () {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        document.querySelectorAll('video.teaser').forEach(function (v) {
+          function toggle() { if (v.paused) { v.play().catch(function () {}); } else { v.pause(); } }
+          if (reduce) { v.removeAttribute('autoplay'); v.pause(); }
+          v.addEventListener('click', toggle);
+          v.addEventListener('keydown', function (e) {
+            if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+# News on the homepage, newest first. The homepage shows the first `show` items.
+# After editing, run:  python3 build.py
+#
+#   date  YYYY-MM, shown as "Oct 2026"
+#   text  one sentence, HTML allowed
+#
+# Every date below comes from arXiv or Crossref. Items whose date isn't confirmed
+# (CS460/560 instructor term, the ICRA 2025 acceptance) are left out on purpose.
+
+show: 5
+items:
+  - date: "2026-10"
+    text: >
+      Posted <a href="https://arxiv.org/abs/2610.28362">SPAR</a> on arXiv. It ranks push actions for
+      navigation among movable obstacles. On the real robot, SPAR Policy succeeded in 37 of 40 trials.
+  - date: "2025-05"
+    text: >
+      <a href="https://doi.org/10.1109/ICRA55743.2025.11128475">PROBE</a> and our
+      <a href="https://doi.org/10.1109/ICRA55743.2025.11128860">tight-insertion paper</a> appeared at ICRA 2025.
+  - date: "2025-04"
+    text: >
+      <a href="https://doi.org/10.1109/LRA.2025.3549657">Visuotactile-based insertion with compliant hands</a>
+      published in RA-L, vol. 10, no. 4.
+  - date: "2024-09"
+    text: >
+      Posted <a href="https://arxiv.org/abs/2409.11522">KRAFT</a> on arXiv. It combines kinodynamic replanning
+      with feedback control over approximate vehicle models.
+  - date: "2023-05"
+    text: >
+      <a href="https://doi.org/10.1109/ICRA48891.2023.10160778">Mono-STAR</a> appeared at ICRA 2023.

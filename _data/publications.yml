@@ -1,0 +1,104 @@
+# Papers on the homepage, newest first within each group.
+# After editing, run:  python3 build.py
+#
+# Fields
+#   key       short id, used as the HTML anchor (#probe)
+#   title     plain text
+#   authors   HTML allowed; wrap my name in <b>...</b>, mark equal contribution with *
+#   venue     plain text
+#   selected  true puts the paper in the top list with a teaser; false lists it under "Other papers"
+#   teaser    looping video under videos/ (MP4, ~500 KB or less); the poster is the same path with .jpg
+#   image     still image under images/, used when there is no teaser
+#   media_alt one sentence saying what the clip or image shows
+#   links     label: url, shown in this order
+#   blurb     one or two plain sentences, HTML allowed
+#
+# Metadata checked against arXiv and Crossref on 2026-11-25.
+# The two reach-avoid papers under review are deliberately not in this file.
+# The repo is public, so anything here is public even if it is not rendered.
+
+- key: spar
+  selected: true
+  title: "SPAR: Search-trained Push Action Ranker for Efficient Navigation Among Movable Obstacles"
+  authors: "<b>Dhruv Metha Ramesh</b>, Tri-An Nguyen, Junshan Huang, Jingjin Yu, Kostas E. Bekris, Abdeslam Boularias"
+  venue: "arXiv preprint, 2026"
+  image: images/spar.jpg
+  media_alt: "Top-down view of a real-robot trial from the SPAR paper: the start scene and the robot at its goal after pushing three movable objects aside."
+  links:
+    arXiv: "https://arxiv.org/abs/2610.28362"
+  blurb: >
+    A transformer that ranks push actions for navigation among movable obstacles, trained on the
+    outcomes of physics-based search. It cuts median simulator calls by 7.0x versus random search,
+    and on a real robot SPAR Policy succeeded in 37 of 40 trials without a physics digital twin.
+
+- key: probe
+  selected: true
+  title: "PROBE: Proprioceptive Obstacle Detection and Estimation while Navigating in Clutter"
+  authors: "<b>Dhruv Metha Ramesh</b>, Aravind Sivaramakrishnan, Shreesh Keskar, Kostas E. Bekris, Jingjin Yu, Abdeslam Boularias"
+  venue: "ICRA 2025"
+  teaser: videos/legged_probe.mp4
+  media_alt: "Top: a Unitree Go1 quadruped pushes through boxes in a real trial, seen from above. Bottom: PROBE's estimate of the obstacles from proprioception alone."
+  links:
+    project page: "https://dhruvmetha.github.io/legged-probe/"
+    paper: "https://doi.org/10.1109/ICRA55743.2025.11128475"
+    arXiv: "https://arxiv.org/abs/2505.11848"
+    code: "https://github.com/dhruvmetha/probe"
+  blurb: >
+    A transformer that estimates the poses and sizes of hidden obstacles from a legged robot's joint
+    torques and body motion, with no camera. Evaluated in Isaac Gym and on a Unitree Go1 quadruped.
+
+- key: insert
+  selected: true
+  title: "Integrating Model-based Control and RL for Sim2Real Transfer of Tight Insertion Policies"
+  authors: "Isidoros Marougkas*, <b>Dhruv Metha Ramesh*</b>, Joe H. Doerr, Edgar Granados, Aravind Sivaramakrishnan, Abdeslam Boularias, Kostas E. Bekris"
+  venue: "ICRA 2025"
+  teaser: videos/insert.mp4
+  media_alt: "A robot arm inserts a heavy-duty industrial connector into its socket in a real-world trial."
+  links:
+    project page: "https://dhruvmetha.github.io/insert/"
+    paper: "https://doi.org/10.1109/ICRA55743.2025.11128860"
+    arXiv: "https://arxiv.org/abs/2505.11858"
+    video: "https://www.youtube.com/watch?v=WJAGNSGC7Nc"
+  blurb: >
+    A potential-field controller combined with a residual RL policy trained in simulation with a
+    sparse reward and a noise curriculum. The policy transfers zero-shot to a real arm for insertions
+    with under 1 mm clearance, including household plugs it never saw in training.
+
+- key: visuotactile
+  selected: true
+  title: "Visuotactile-Based Learning for Insertion with Compliant Hands"
+  authors: "Osher Azulay, <b>Dhruv Metha Ramesh</b>, Nimrod Curtis, Avishai Sintov"
+  venue: "IEEE Robotics and Automation Letters (RA-L), 2025"
+  image: images/visuotactile.jpg
+  media_alt: "An underactuated compliant hand with tactile sensors on its fingertips holds a red peg above its socket."
+  links:
+    paper: "https://doi.org/10.1109/LRA.2025.3549657"
+    arXiv: "https://arxiv.org/abs/2411.06408"
+    code: "https://github.com/osheraz/IsaacGymInsertion"
+  blurb: >
+    Insertion with an underactuated compliant hand using all-around tactile sensing and a depth camera.
+    A transformer policy trained in simulation by teacher-student distillation runs on the real hand
+    without further training.
+
+- key: kraft
+  selected: false
+  title: "KRAFT: Sampling-Based Kinodynamic Replanning and Feedback Control over Approximate, Identified Models of Vehicular Systems"
+  authors: "Aravind Sivaramakrishnan, Sumanth Tangirala, <b>Dhruv Metha Ramesh</b>, Edgar Granados, Kostas E. Bekris"
+  venue: "arXiv preprint, 2024"
+  links:
+    arXiv: "https://arxiv.org/abs/2409.11522"
+  blurb: >
+    Replanning with an asymptotically optimal kinodynamic tree planner plus feedback tracking, over a
+    rough vehicle model tuned by system identification, for robots driving on surfaces with unknown friction.
+
+- key: monostar
+  selected: false
+  title: "Mono-STAR: Mono-camera Scene-level Tracking and Reconstruction"
+  authors: "Haonan Chang, <b>Dhruv Metha Ramesh</b>, Shijie Geng, Yuqiu Gan, Abdeslam Boularias"
+  venue: "ICRA 2023"
+  links:
+    paper: "https://doi.org/10.1109/ICRA48891.2023.10160778"
+    arXiv: "https://arxiv.org/abs/2301.13244"
+  blurb: >
+    Real-time single-camera 3D reconstruction that handles fast motion, non-rigid deformation and
+    topology changes in one system, using optical-flow constraints and a semantic-aware deformation graph.
